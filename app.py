@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 
 # Importing the views 
 from Home.routes import home
+from Admin.routes import admin
 
 # Loading the env variables 
 load_dotenv()
@@ -21,22 +22,22 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 app.secret_key = os.getenv('SECRET_KEY')
 app.permanent_session_lifetime = timedelta(days=24)
 
+# Setting the cors application 
+CORS(app)
+
 # Logging 
 # logging.basicConfig(filename="Logs/requests.log", level=logging.DEBUG, 
 #                     format="%(asctime)s,%(message)s,%(filename)s", 
 #                     datefmt="%m/%d/%Y %I:%M:%S %p")
 
-# Setting the cors application 
-CORS(app)
 
 # Register the views using the "app.register" function 
 app.register_blueprint(home, url_prefix="/")
+app.register_blueprint(admin, url_prefix="/admin")
 
 # Running the flask application 
 if __name__ == "__main__":
-    app.run(port=5001, 
+    app.run(port=5000, 
             host="localhost",
             debug=True
-    ) 
-    # Running the application   
-    app.run() 
+    )

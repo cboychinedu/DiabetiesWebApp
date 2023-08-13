@@ -12,7 +12,7 @@ from flask import render_template, redirect, url_for
 home = Blueprint('home', __name__, template_folder='templates', static_folder='static'); 
 
 # Creating an instance of the database 
-db = Sqlite; 
+db = Sqlite(); 
 
 # Creating the home page 
 @home.route("/", methods=["GET"])
