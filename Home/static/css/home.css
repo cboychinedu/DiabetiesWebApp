@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px; 
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
 }
 a {
     text-decoration: none;
@@ -20,6 +20,7 @@ body {
 .innerNav {
     margin: auto;
     width: 70%;
+    font-size: 13px;
     height: 50px;
 }
 .rightNav {
