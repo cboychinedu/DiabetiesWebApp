@@ -2,13 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('.static', filename='css/home.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h3 class="color"> Home page </h3>
+    <!-- Adding the navbar -->
+    <div class="mainNav">
+        <nav class="innerNav">
+            <nav class="rightNav">
+                <a href=""> What We Do </a>
+                <a href=""> Who We Serve </a>
+                <a href="" class="contactUs"> Contact Us </a>
+            </nav>
+            <nav class="leftNav">
+                <a href="">
+                    <div>
+                        <img class="imageLogo" src="{{ url_for('.static', filename='images/diabeties.jpg') }}" alt="">
+                    </div>
+                </a>
+                <a href=""> Home </a>
+                <a href=""> Who We Are </a>
+            </nav>
+        </nav>
+    </div>
 
+    <!-- Adding the main section -->
+    <section class="mainSection">
+        <!-- Adding div -->
+        <div class="innerDiv">
+
+        </div>
+
+        <!-- Adding div -->
+        <div class="innerDiv">
+
+        </div>
+        
+        <!-- Adding div -->
+        <div class="innerDiv">
+
+        </div>
+
+    </section>
+    
 
 
 
