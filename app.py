@@ -22,9 +22,9 @@ app.secret_key = os.getenv('SECRET_KEY')
 app.permanent_session_lifetime = timedelta(days=24)
 
 # Logging 
-logging.basicConfig(filename="Logs/requests.log", level=logging.DEBUG, 
-                    format="%(asctime)s,%(message)s,%(filename)s", 
-                    datefmt="%m/%d/%Y %I:%M:%S %p")
+# logging.basicConfig(filename="Logs/requests.log", level=logging.DEBUG, 
+#                     format="%(asctime)s,%(message)s,%(filename)s", 
+#                     datefmt="%m/%d/%Y %I:%M:%S %p")
 
 # Setting the cors application 
 CORS(app)
