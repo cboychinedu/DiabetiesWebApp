@@ -1,0 +1,5 @@
+flask
+flask_cors
+dotenv
+sqlite3
+mysql-connector-python

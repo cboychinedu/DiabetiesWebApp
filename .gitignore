@@ -1,0 +1,10 @@
+# Env 
+.env
+
+/__pycache__
+
+# Logs 
+/Logs
+Logs/
+/Logs/requests.log
+Logs/requests.log
